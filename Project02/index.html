@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button w3-grey">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-grey"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#work experience and relevant projects" class="w3-bar-item w3-button w3-hide-small w3-grey"><i class="fa fa-th"></i> Work and Projects</a>
+    <a href="#skills" class="w3-bar-item w3-button w3-hide-small w3-grey"><i class="fa fa-th"></i>SKILLS</a>
+    <a href="#education" class="w3-bar-item w3-button w3-hide-small w3-grey"><i class="fa fa-th"></i> EDUCATION</a>
+    <a href="#certificates" class="w3-bar-item w3-button w3-hide-small w3-grey"><i class="fa fa-th"></i> CERTIFICATES</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-grey"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#work experience and relevant projects" class="w3-bar-item w3-button" onclick="toggleFunction()">Work and Projects</a>
+    <a href="skills" class="w3-bar-item w3-button" onclick="toggleFunction()">SKILLS</a>
+    <a href="#education" class="w3-bar-item w3-button" onclick="toggleFunction()">EDUCATION</a>
+    <a href="#certificates" class="w3-bar-item w3-button" onclick="toggleFunction()">CERTIFICATES</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xxxlarge w3-wide w3-animate-opacity">Nida Abbas Bandukwala<span class="w3-hide-small"></span></span>
+    <p id="flip"class="w3-center w3-black"> Click Here </p>
+    <p id="panel" class="w3-center w3-padding-large w3-black w3-xxxlarge w3-wide w3-animate-opacity">Computer Science student at McMaster University</p>
+    
+  </div>
+</div>
+
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT ME</h3>
+  <h4 class="w3-center"><em>Hello! My name is Nida Abbas Bandukwala.</em></h4>
+  <h3 id ="slide" class="w3-center"><em>Welcome to my website!</em></h3>
+  <button class="w3-center w3-black">Click Here</button>
+  
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      
+      <img id="image" src= "https://scontent-yyz1-1.xx.fbcdn.net/v/t1.0-9/89839455_10218439636760062_1600495846044991488_n.jpg?_nc_cat=111&_nc_sid=110474&_nc_ohc=0FZ6wIsHLlwAX9q8kzw&_nc_ht=scontent-yyz1-1.xx&oh=36f2d7a79dcd8ef51b42bbd6a737fbd6&oe=5E948D4F" class="w3-round w3-image w3-hover-opacity-off" alt="Photo of Me" width="300px" height="600px" style="margin: 0px 20px">
+      <button id="button1" class="w3-center w3-black">Click here to animate my picture</button1>
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <h4>I am an enthusiastic Computer Science student, currently pursuing a Bachelor's degree at McMaster University. </h4>
+      <h4> I am very hard-working and responsible and like to take up new challenges. Currently, I am learning various programming languages such as Javascript, Bash, Django, HTML, Haskell and Python. I am continuously looking for opportunities to put my theoretical knowledge of Computer Science to practice. </h4>
+    </div>
+  </div>
+  <p class="w3-large w3-center w3-padding-16" id="skills">Skills:</p>
+  <p class="w3-wide"><i class="fa fa-code"></i>Python</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:70%">Intermediate</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-code"></i>Haskell</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:65%">Intermediate</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-comments-o"></i>Communication Skills</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">Strong</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-braille"></i>Problem Solving</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">Good</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-cloud"></i>Critical thinking</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:60%">Intermediate</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-bullseye"></i>Leadership</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:60%">Strong</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-child"></i>Teamwork</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">Strong</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-child"></i>Effective Classroom Management</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:80%">Strong</div>
+  </div>
+  
+</div>
+
+
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container ">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">EDUCATION</span>
+    
+  </div>
+</div>
+   
+<div class="w3-rgb(179, 204, 204)" id="education">
+<div class="w3-row-padding w3-padding-32 solid" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          
+          <div class="w3-container w3-white">
+            <h2><b>Bachelor of Applied Science - Computer
+Science</b></h2>
+      <p class="w3-xxlarge"><b> McMaster University </b></p>
+            <p class="w3-opacity w3-large">September 2019 - Present</p>     <p>Hamilton, Canada</p>
+            <p><b>Core Courses:</b></p>
+            <ul class="b">
+        <li>Introduction to Computational Thinking</li>
+        <li>Introduction to Programming</li>
+        <li>Computer Science Practice and Experience: Basic Concepts</li>
+            <li>Engineering Mathematics I</li>
+            <li>Engineering Mathematics II-A</li>
+            <li>Engineering Mathematics II-B</li>
+            
+      </ul>
+         
+         </div>
+         </div>
+         
+       <div class="w3-third w3-margin-bottom">
+          
+          <div class="w3-container w3-white">
+          <h2><b>A levels</b></h2>
+            <p class="w3-xxlarge"><b>The Lyceum School</b></p>
+            <p class="w3-opacity w3-large">August 2017 - June 2019</p>
+            <p> Karachi, Pakistan </p>
+            <p class="w3-large"><b>Courses</b></p>
+            <ul class="b">
+        <li>Computer Science</li>
+        <li>Mathematics</li>
+        <li>Physics</li>
+            </ul>
+           </div>
+          </div>
+         </div>
+<!-- Container (Portfolio Section) -->
+<div class="bgimg-2 w3-display-container " id="work experience and relevant projects">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">Work Experience and Relevant Projects</span>
+
+    
+  </div>
+</div>
+
+<div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          <img src="https://upload.wikimedia.org/wikipedia/en/a/af/TCF_Foundation_logo.jpg" alt="New York" style="width:100%" class="w3-hover-opacity" "solid">
+          <div class="w3-container w3-white">
+            <h2><b>Teacher</b></h2>
+            <p class="w3-xlarge"><b>The Citizens Foundation </b></p>
+            <p class="w3-opacity">July 2018</p>
+            <p>Karachi, Pakistan</p>
+            <p class="w3-opacity">The Citizens Foundation is a non-profit organisation which focuses on
+providing education to children in rural areas and urban slums of Pakistan.</p>
+      <p class="w3-large"> Achievements/Tasks:</p>
+             <ul class="b">
+        <li>Managed a classroom with 20+ students from grades 1-4.</li>
+        <li>Developed daily agendas with a group of 10+ instructors and
+volunteers.</li>
+        <li>Implemented daily lesson plans for the subjects of
+Mathematics,English, and Urdu.</li>
+</ul>
+            </div>
+            </div>
+            
+           
+          
+         
+
+        <div class="w3-third w3-margin-bottom">
+          <img src="https://www.jasonmpittman.com/wp-content/uploads/2019/03/comp-sci.jpg" alt="New York" style="width:100%" >
+          <div class="w3-container w3-white">
+            <p class ="w3-xxlarge"><b>Python</b></p>
+           
+             <ul class="b">
+        <li>Developed a program which allows a person to send emails through
+a single piece of code.</li>
+        <li>Created a program to check whether someone's password has ever
+been hacked.</li>
+        <li>Built a program that allows you to merge and add watermarks to
+files.</li>
+<li>Developed code that allows you to extract data from any website.</li>
+            </ul>
+            </div>
+            
+           </div>
+            <div class="w3-third w3-margin-bottom">
+          <img src="https://pbs.twimg.com/profile_images/556542528611442688/blSdznS_.jpeg" alt="New York" style="width:100%" >
+          <div class="w3-container w3-white">
+            <p class ="w3-xxlarge"><b>Haskell</b></p>
+           
+             <ul class="b">
+        <li>Developed a module that implements standard operations over
+Gaussian integers.</li>
+        <li>Developed a derivative calculator that also performs minor
+simplifications on functions.</li>
+        <li>Created a practical higher-order function that calculates the value of
+a definite integral using the trapezoidal rule.</li>
+
+            </ul>
+          </div>
+         </div>
+         </div>
+         </div>
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container " id="certificates">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">Certificates</span>
+    
+  </div>
+</div>
+<div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          <img src="https://www.leakka.com/wp-content/uploads/2017/12/oXlPsa_W.jpg" alt="New York" style="width:50%" class="w3-hover-opacity" "solid">
+          <div class="w3-container w3-white">
+            
+            <p class="w3-xlarge"><b>Complete Python Developer in 2020: Zero to
+Mastery (12/2019  Present)</b></p>
+            
+            </div>
+            </div>
+             
+            <div class="w3-third w3-margin-bottom">
+          <img src="https://pbs.twimg.com/profile_images/925501394043379712/wP1wjTqG.jpg" alt="New York" style="width:50%" >
+          <div class="w3-container w3-white">
+            <p class ="w3-xlarge"><b>Cogmation Robotics and iKNOWvation Lab - Virtual
+Robotics workshop (10/2017  11/2017)</b></p>
+<p class="w3-opacity">This workshop allows students to learn how to design robots and work with
+them in a simulated computer environment.</p>
+           
+             
+          </div>
+         </div>
+         <div class="w3-third w3-margin-bottom">
+          <img src="https://c.tribune.com.pk/2016/01/1025835-___n-1452545957-890-640x480.jpg" alt="New York" style="width:50%" >
+          <div class="w3-container w3-white">
+            <p class ="w3-xlarge"><b>Model United Nations IBA (01/2017  01/2017)</b></p>
+<p class="w3-opacity">Participated in a weekend-long MUN conference held at the Institute of
+Business Administration in Karachi,Pakistan.</p>
+         </div>
+         </div>
+         </div>
+<div class="bgimg-3 w3-display-container">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">CONTACT ME</span>
+    
+  </div>
+</div>
+<h3 class="w3-center"> Get in touch with me! </h3>
+<h3 class="w3-center"> The easiest way to contact me is via email. </h3>
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Hamilton, ON, Canada<br>
+        
+        <i  class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: nida.bandukwala@gmail.com<br>
+      </div>
+     
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+   
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+</script>
+
+<script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+<script src="xa3.js"></script>
+
+</body>
+</html>
