@@ -1,7 +1,0 @@
-{% extends 'base.djhtml' %}
-
-{% block title %}Signup Page{% endblock %}
-
-{% block middle_column %}
-    <!-- TODO Objective 1: implement signup form -->
-{% endblock %}
