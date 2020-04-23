@@ -27,17 +27,15 @@ def login_view(request):
             return redirect('social:messages_view')
         else:
             request.session['failed'] = True
+    request.session['counter']=1
 
-
-    request.session['counter'] = 1
-    request.session['counter1'] = 1
     form = AuthenticationForm(request.POST)
     failed = request.session.get('failed',False)
     context = { 'login_form' : form,
                 'failed' : failed }
 
     return render(request,'login.djhtml',context)
-
+s
 def logout_view(request):
     """Redirects to login_view from /e/macid/logout/ (url name: logout_view)
     Parameters
