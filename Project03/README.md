@@ -290,8 +290,8 @@ var1.likes.add(x)
 - **Friends** = ["*NRZ", "Ayez Sd", "Ash M, "JenK*"]
 
 #### User2:
-- **Username** = "*NRZ*"
-- **Password** = "*helloo1*"
+- **Username** = "*NR Z*"
+- **Password** = "*hello9o1*"
 - **Employment** = "*Armani*"
 - **Location** = "*Karachi, Pakistan*"
 - **Birthday** = "*2000-11-09*"
@@ -305,7 +305,7 @@ var1.likes.add(x)
 - **Location** = "*Amsterdam, Netherlands*"
 - **Birthday** = "*2000-09-10*"
 - **Interests** = ["*Badminton", "Music*"]
-- **Friends** = ["*NRZ", "NB", "Ash M, "Anj", "JenK*"]
+- **Friends** = ["*NRZ", "NB", "Ash M, "JenK*"]
 
 #### User4:
 - **Username** = "*Ash M*"
@@ -331,7 +331,7 @@ var1.likes.add(x)
 - **Employment** = "*Amazon*"
 - **Location** = "*New York*"
 - **Birthday** = "*2000-12-23*"
-- **Interests** = ["*Badminton", "Hiking*"]
+- **Interests** = ["*Badminton", "Music*"]
 - **Friends** = ["*Ayesh K", "Yuv J*"]
 
 #### User7:
@@ -350,7 +350,7 @@ var1.likes.add(x)
 - **Location** = "*Indore, India*"
 - **Birthday** = "*2002-02-18*"
 - **Interests** = ["*Biking", "Cooking*"]
-- **Friends** = ["*MJ", "Ayesh K*"]
+- **Friends** = ["*MJ", "Ayesh K, Anj*"]
 
 #### User9:
 - **Username** = "*Anj*"
@@ -359,4 +359,4 @@ var1.likes.add(x)
 - **Location** = "*Mississauga, Ontario*"
 - **Birthday** = "*2001-10-26*"
 - **Interests** = ["*Baking", "Art*"]
-- **Friends** = ["*Ayez Sd*"]
+- **Friends** = ["*Yuv J*"]
