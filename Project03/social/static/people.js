@@ -21,8 +21,7 @@ function friendRequest(event) {
 
     // AJAX post
     $.post(url_path,
-           json_data,
-           frResponse);
+           json_data);
 }
 
 /* ********************************************************************************************

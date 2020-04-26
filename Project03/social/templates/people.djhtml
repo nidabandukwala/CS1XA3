@@ -16,13 +16,16 @@
             <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> {{ i.birthday }} </p>
             
                 <!-- TODO Objective 5: make id unique to username and disable button if friend request already sent -->
+            
+
+                {% if i.user.username in disable %}
+                <button type="button" id="fr-{{i.user_id}}" class="w3-button w3-theme-d1 w3-margin-bottom fr-button" disabled>Friend Request</button>
+                {% else %}
+                <button type="button" id="fr-{{i.user_id}}" onclick="this.disabled=true" class="w3-button w3-theme-d1 w3-margin-bottom fr-button">Friend Request</button>
+                {% endif %}
+              
                 
-                <button type="button" id="fr-{{i.user_id}}" onclick="myFunction()" class="w3-button w3-theme-d1 w3-margin-bottom fr-button">Friend Request</button>
-                <script>
-			function myFunction(){
-				document.getElementById($"fr-{{i.user_id}}").disabled = true;
-			}
-		</script>
+                
         </div>
        {% endfor %}
 
@@ -72,4 +75,5 @@
      accept_decline_url = "{% url 'social:accept_decline_view' %}";
     </script>
     <script src="{% static 'people.js' %}"></script>
+    
 {% endblock %}

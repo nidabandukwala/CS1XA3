@@ -142,6 +142,8 @@ some_user = models.UserInfo.objects.get(user_id=username)
 x = models.UserInfo.objects.get(user=request.user)
 models.FriendRequest.objects.create(to_user=some_user, from_user=x)
 ```
+- Once a friend request has been sent, the button is disabled and the person to whom the request has been sent will also not be able to send a request to the user. 
+
 #### Exceptions:
 - If the user is not authenticated, the page will automatically redirect to the login page.
 - If the POST data does not contain any id, an **HttpResponseNotFound** error will be raised with the following error message
@@ -252,6 +254,8 @@ posts[0:request.session.get('counter1')]
 {{ y.content }}
 {% endfor %}
 ```
+- As the "more" button is clicked, more posts are displayed. 
+
 #### Exceptions:
 - If the user is not authenticated, the page will automatically redirect to the login page.
 
@@ -290,8 +294,8 @@ var1.likes.add(x)
 - **Friends** = ["*NRZ", "Ayez Sd", "Ash M, "JenK*"]
 
 #### User2:
-- **Username** = "*NR Z*"
-- **Password** = "*hello9o1*"
+- **Username** = "*NRZ*"
+- **Password** = "*helloo1*"
 - **Employment** = "*Armani*"
 - **Location** = "*Karachi, Pakistan*"
 - **Birthday** = "*2000-11-09*"
