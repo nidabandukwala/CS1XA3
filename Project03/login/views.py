@@ -70,15 +70,12 @@ def signup_view(request):
         form = UserCreationForm(request.POST)
         if form.is_valid():
            username = form.cleaned_data.get('username')
-           password = form.cleaned_data.get('password')
+           password = form.cleaned_data.get('password1')
            models.UserInfo.objects.create_user_info(username=username, password=password)
            user = authenticate(request, username=username, password=password)
-           if user is not None:
-              request.session['failed'] = False
-              login(request,user)
-              return redirect('social:messages_view')
-           else:
-              request.session['failed'] = True
+           login(request, user)
+           return redirect('social:messages_view')
+
     else:
         form = UserCreationForm()
 
