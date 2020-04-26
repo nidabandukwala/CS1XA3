@@ -114,6 +114,7 @@ def people_view(request):
         user_info = models.UserInfo.objects.get(user=request.user)
         users = models.UserInfo.objects.exclude(user=request.user)
         all_people = []
+        disable = []
         # TODO Objective 4: create a list of all users who aren't friends to the current user (and limit size)
         for user in users:
                if user not in user_info.friends.all():
@@ -123,13 +124,23 @@ def people_view(request):
         # TODO Objective 5: create a list of all friend requests to current user
         friend_requests = []
         x = models.FriendRequest.objects.filter(to_user=user_info)
-        print(x)
         for i in x:
                friend_requests.append(i)
 
+
+        some_list = models.FriendRequest.objects.all()
+        for x in all_people:
+            for i in some_list:
+                    if (i.from_user.user.username == x.user.username and i.to_user.user.username == user_info.user.username) or (user_info.user.username == i.from_user.user.username and i.to_user.user.username == x.user.username):
+                             disable.append(x.user.username)
+
+
+
+
         context = { 'user_info' : user_info,
                     'all_people' : all_people[0:request.session.get('counter')],
-                    'friend_requests' : friend_requests }
+                    'friend_requests' : friend_requests,
+                     'disable' : disable }
 
         return render(request,'people.djhtml',context)
 
@@ -165,7 +176,8 @@ def like_view(request):
             # TODO Objective 10: update Post model entry to add user to likes field
             x = models.UserInfo.objects.get(user=request.user)
             y= models.Post.objects.filter(owner=x)
-            var1 = models.Post.objects.get(pk=postidreq)
+            var1 = models.Post.objects.get(owner=x)
+            print("hi")
             var1.likes.add(x)
             status='success'
             return HttpResponse()
@@ -240,7 +252,7 @@ def more_ppl_view(request):
 
         # TODO Objective 4: increment session variable for keeping track of num ppl displayed
         x = request.session.get('counter',0)
-        request.session['counter'] = x+1
+        request.session['counter'] = x+2
 
         # return status='success'
         return HttpResponse()
